@@ -1,1 +1,1 @@
-# convolutional pose machine implementation by chainer
+# Convolutional Pose Machine implementation by Chainer
