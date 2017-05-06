@@ -33,7 +33,7 @@ def get_arguments():
     parser.add_argument('--n_stage', type=int, default=4,
                         help='Set the number of stages of your network '
                         'Default is 4 stages.')
-    parser.add_argument('--init_model', type=str, default='trained_model',
+    parser.add_argument('--init_model', type=str, default='trained_model.model',
                         help='Path to chainer model to load before trainig.')
     parser.add_argument('--n_point', type=int, default=16,
                         help='Set the number of joint points')
