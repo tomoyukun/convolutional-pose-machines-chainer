@@ -2,7 +2,6 @@ import argparse
 import time
 import os
 import logging
-#import os
 
 def create_log(args):
     logging.basicConfig(
