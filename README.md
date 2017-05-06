@@ -1,1 +1,1 @@
-# convolutional-pose-machine-by-chainer
+# convolutional-pose-machine-implementation-by-chainer
