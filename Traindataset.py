@@ -37,8 +37,7 @@ class Train(object):
                               (max(joint_y) - min(joint_y)) * 1.2]]
                 if not (path in self.images):
                         self.images[path] = cv.imread("dataset/mpii/images/{}".format(path))
-                #if len(self.im_path) ==100:
-                    #break
+                
         print 'ready!'
 
     def generate(self, i):
