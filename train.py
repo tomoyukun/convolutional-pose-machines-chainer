@@ -64,8 +64,6 @@ if __name__ == '__main__' :
             cpm.cleargrads()
             loss.backward()
             optimizer.update()
-            if i%1000 == 0:
-                print i
 
             trainloss += cuda.to_cpu(loss.data)*len(miniperm)
         print 'trainloss = {}'.format(trainloss / len(data))
