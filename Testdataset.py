@@ -7,7 +7,7 @@ import os
 
 class Test(object):
 
-    def __init__(self, raw_data, imsize, c_deviation=2, pck_rate=0.2):
+    def __init__(self, raw_data, imsize, pck_rate=0.2, c_deviation=2):
         for key, val in locals().items():
             setattr(self, key, val)
         self.load_data(self.raw_data)
