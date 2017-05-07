@@ -1,6 +1,7 @@
 # Convolutional Pose Machines implementation by Chainer
 Experimental implementation. This is not official.  
-Original paper is [Convolutional Pose Machines](http://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Wei_Convolutional_Pose_Machines_CVPR_2016_paper.html), and official implementarion by caffe is [convolutional-pose-machines-release](https://github.com/CMU-Perceptual-Computing-Lab/convolutional-pose-machines-release).
+Original paper is [Convolutional Pose Machines](http://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Wei_Convolutional_Pose_Machines_CVPR_2016_paper.html), and official implementarion by caffe is [convolutional-pose-machines-release](https://github.com/CMU-Perceptual-Computing-Lab/convolutional-pose-machines-release).  
+ I will add more information soon.
 # Requirements
 - python 2.7
 - Chainer 1.17.0+
@@ -30,5 +31,7 @@ If you want to check possible options,
 ![bliefmap](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/belief_maps2.png)
 ![sample2](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/output3.jpg)
 ![sample3](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/output8.jpg)
+
+
 
 
