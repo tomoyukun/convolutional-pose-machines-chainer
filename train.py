@@ -33,8 +33,6 @@ if __name__ == '__main__' :
     cuda.get_device(args.gpu).use()
     cpm.to_gpu()
     xp = cuda.cupy
-    if not os.path.exists('trained_model'):
-        os.mkdir('trained_model')
 
     #trainloop
     for epoch in xrange(args.n_epoch):
