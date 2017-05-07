@@ -7,7 +7,7 @@ Original paper is [Convolutional Pose Machines](http://www.cv-foundation.org/ope
 # Start to demo
 ## Download trained model
     cd init_models
-    wget 
+    wget https://www.dropbox.com/s/k3ykwmt290iceuo/trained_model.model
 note : This trained model is 4stages-model so you should set n_stage of next command to 4.
 ## Use demo.py
     python demo.py --imagename sample.jpg --gpu 0 --n_stage 4
