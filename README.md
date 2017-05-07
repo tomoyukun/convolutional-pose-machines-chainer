@@ -25,7 +25,10 @@ For example,
 If you want to check possible options,
 
     python train.py --help
-# example of outputs from demo
-![sample](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/output1.png　=x100)
+# examples of demo.py
+![sample1](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/output6.png)
+![bliefmap](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/belief_maps2.png)
+![sample2](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/output3.jpg)
+![sample3](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/output8.jpg)
 
 
