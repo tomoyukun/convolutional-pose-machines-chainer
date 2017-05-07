@@ -25,5 +25,7 @@ For example,
 If you want to check possible options,
 
     python train.py --help
+# example of outputs from demo
+![sample](https://github.com/tomoyukun/convolutional-pose-machine-chainer/blob/image/output1.png　=x100)
 
 
