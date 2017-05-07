@@ -39,8 +39,6 @@ class Test(object):
                 self.images += [image]
                 self.joint_x += [joint_x]
                 self.joint_y += [joint_y]
-                #if len(self.images) == 50:
-                    #break
 
         print 'ready!'
 
