@@ -3,6 +3,7 @@ from chainer import Variable
 from chainer import optimizers
 from chainer import cuda
 from chainer import serializers
+from tqdm import tqdm
 
 import numpy as np
 import Traindataset
@@ -42,7 +43,8 @@ if __name__ == '__main__' :
         testloss = 0
 
         #train
-        for i in xrange(0, len(data), args.batchsize):
+        print 'training...'
+        for i in tqdm(xrange(0, len(data), args.batchsize)):
             imgs = []
             b_maps = []
             c_maps = []
@@ -67,8 +69,9 @@ if __name__ == '__main__' :
         print 'trainloss = {}'.format(trainloss / len(data))
 
         #test
+        print 'testing'
         results = []
-        for i in xrange(len(eva)):
+        for i in tqdm(xrange(len(eva))):
             img, b_map, c_map = eva.generate(i)
             img = img[np.newaxis,:,:,:]
             b_map = b_map[np.newaxis,:,:,:]
