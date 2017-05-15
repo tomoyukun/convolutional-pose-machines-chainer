@@ -69,7 +69,7 @@ if __name__ == '__main__' :
         print 'trainloss = {}'.format(trainloss / len(data))
 
         #test
-        print 'testing'
+        print 'testing...'
         results = []
         for i in tqdm(xrange(len(eva))):
             img, b_map, c_map = eva.generate(i)
