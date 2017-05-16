@@ -1,4 +1,5 @@
 from skimage import transform
+from tqdm import tqdm
 
 import csv
 import cv2 as cv
@@ -20,10 +21,10 @@ class Test(object):
         self.joint_x = []
         self.joint_y = []
         self.cropsize = []
-        print 'preparing test dataset'
+        print 'preparing test dataset...'
         with open(raw_data,"rb") as f:
             reader = csv.reader(f)
-            for row in reader:
+            for row in tqdm(reader):
                 path = row[0]
                 image = cv.imread("dataset/mpii/images/{}".format(path))
                 joint_x = np.array(map(float, row[1::2]))
