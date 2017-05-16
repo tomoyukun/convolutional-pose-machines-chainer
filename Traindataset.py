@@ -1,4 +1,5 @@
 from skimage import transform
+from tqdm import tqdm
 
 import csv
 import cv2 as cv
@@ -21,10 +22,10 @@ class Train(object):
         self.joint_x = []
         self.joint_y = []
         self.bbox = [] #centerx, centery , width, height
-        print 'preparing train dataset'
+        print 'preparing train dataset...'
         with open(raw_data,"rb") as f:
             reader = csv.reader(f)
-            for row in reader:
+            for row in tqdm(reader):
                 path = row[0]
                 joint_x = map(float, row[1::2])
                 joint_y = map(float, row[2::2])
