@@ -21,7 +21,7 @@ class Train(object):
         self.im_path = []
         self.joint_x = []
         self.joint_y = []
-        self.bbox = [] #centerx, centery , width, height
+        self.bbox = [] 
         print 'preparing train dataset...'
         with open(raw_data,"rb") as f:
             reader = csv.reader(f)
