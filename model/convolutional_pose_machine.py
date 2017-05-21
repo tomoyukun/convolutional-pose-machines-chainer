@@ -4,6 +4,7 @@ import chainer.links as L
 
 class Stage1(chainer.Chain):
 
+    
     def __init__(self, n_point):
         super(Stage1, self).__init__(
             conv1=L.Convolution2D(3, 128, ksize=9, stride=1, pad=4),
