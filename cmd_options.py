@@ -3,6 +3,7 @@ import time
 import os
 import logging
 
+
 def create_log(args):
     logging.basicConfig(
         format='%(asctime)s [%(levelname)s] %(message)s',
