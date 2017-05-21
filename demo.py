@@ -4,7 +4,6 @@ from chainer import optimizers
 from chainer import cuda
 from chainer import serializers
 
-
 import matplotlib as mpl
 mpl.use('Agg')
 
