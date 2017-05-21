@@ -66,7 +66,6 @@ if __name__ == '__main__' :
             optimizer.update()
 
             trainloss += cuda.to_cpu(loss.data)*len(miniperm)
-        print 'trainloss = {}'.format(trainloss / len(data))
 
         #test
         print 'testing...'
@@ -86,6 +85,7 @@ if __name__ == '__main__' :
             results +=[result]
 
         results = np.array(results)
+        print 'trainloss = {}'.format(trainloss / len(data))
         print 'testloss = {}'.format(testloss / len(eva))
         print 'testacc  = {}'.format(results.mean())
         # log and save
