@@ -3,7 +3,6 @@ import chainer.functions as F
 import chainer.links as L
 
 class Stage1(chainer.Chain):
-
     
     def __init__(self, n_point):
         super(Stage1, self).__init__(
