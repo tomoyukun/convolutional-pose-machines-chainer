@@ -37,7 +37,7 @@ if __name__ == '__main__' :
 
     #trainloop
     for epoch in xrange(args.n_epoch):
-        print 'epoch {}'.format(epoch+1)
+        print '¥n<epoch {}>'.format(epoch+1)
         perm = np.random.permutation(len(data))
         trainloss = 0
         testloss = 0
