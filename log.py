@@ -8,7 +8,6 @@ class Log(object):
         with open(self.log_path, 'w') as f:
             f.write('epoch, testacc, trainloss, testloss\n')
             
-
     def __call__(self, epoch, testacc, trainloss, testloss):
         with open(self.log_path, 'a') as f:
             f.write('{},{},{},{}\n'.format(epoch, testacc, trainloss, testloss))
