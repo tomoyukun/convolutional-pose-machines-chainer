@@ -3,6 +3,7 @@ import csv
 import numpy as np
 import argparse
 
+
 def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--rate', type=float, default=0.1,
